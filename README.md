@@ -17,4 +17,7 @@ kubectl create deployment springboot-k8s-ex1 --image=hasitha1990/springboot-k8s-
 Then we need to create a service using above  deployment
 kubectl expose deployment springboot-k8s-ex1 --type=NodePort  --target-port=8080 --port=80
 
+We can access the endpoint through below url. Need to change the port accordingly.(Relevant port can see through  kubectl get service springboot-k8s-ex1 command)
+http://localhost:32738/am-i-lucky/
+
 
